@@ -16,12 +16,33 @@
     margin-top: 2%;
 }
 
+.mgT-4{
+    margin-top: 4%;
+}
+
 .mgT-10{
     margin-top: 10%;
 }
 
-.mgL-4{
-    margin-left: 4%;
+.mgL-6{
+    margin-left: 6%;
+}
+
+.mgL-10{
+    margin-left: 10%;
+}
+
+.mgB-10{
+    margin-bottom: 10%;
+}
+
+.mgB-15{
+    margin-bottom: 15%;
+}
+
+.mgLR-5{
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 /*Classes Texto*/
@@ -29,5 +50,14 @@
     color: white;
 }
 
+p{
+    font-family: 'Dosis', sans-serif;
+}
+
+.texto-central{
+    text-align: center;
+}
+
 /*IMPORTS*/
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
