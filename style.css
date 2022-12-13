@@ -1,7 +1,4 @@
-.containerPadding{
-    margin-top: 2%;
-}
-
+/*Classes Container*/
 .myContainer{
     border-radius: 10px;
     padding: 20px;
@@ -9,15 +6,25 @@
     margin-top: 4%;
 }
 
-.margemTop10{
-    margin-top: 10%;
-}
-
 .wholeContainer{
     width: 100%;
     background-color: #0e1124;
 }
 
+/*Classes de margem*/
+.mgT-2{
+    margin-top: 2%;
+}
+
+.mgT-10{
+    margin-top: 10%;
+}
+
+.mgL-4{
+    margin-left: 4%;
+}
+
+/*Classes Texto*/
 .texto-branco{
     color: white;
 }
