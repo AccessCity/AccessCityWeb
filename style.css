@@ -3,9 +3,11 @@ body{
 }
 
 .myContainer{
-    background-color: rgb(168, 167, 167);
     border-radius: 10px;
     padding: 20px;
     width: 50%;
-    margin-top: 6%;
+    margin-top: 4%;
 }
+
+/*IMPORTS*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');

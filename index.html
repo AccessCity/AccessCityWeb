@@ -15,6 +15,7 @@
 
 <body>
   <!--Começo NavBar-->
+  <!--Outras abas poderão ser abertas com o LogIn, tipo os documentos (ainda não sei como fazer isso)-->
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(102, 155, 188);">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html"><img src="imagens/Logo3.png" height="40px" width="40px"></a>
@@ -35,7 +36,7 @@
           </li>
         </ul>
         <form class="d-flex" role="search">
-          <button class="btn btn-light" type="submit">Log In</button>
+          <button class="btn btn-light" type="submit">Log In</button><!--Pra mim ele tá meio torto, depois a gente analisa isso-->
         </form>
       </div>
     </div>
@@ -45,12 +46,17 @@
   <!--Container principal-->
   <div class="container myContainer">
     <div class="row pt-2">
-      <img src="imagens/ACimagem.png">
+      <img src="imagens/nome.png">
     </div>
-    <div class="row pt-4 col-md-5">
-      <a class="btn btn-dark" href="https://getbootstrap.com/docs/5.2/components/buttons/" role="button" target="_blank">Baixe Agora!</a>
+    <div class="row pt-4"> <!--Ainda falta deixar o botão centralizado QUE PORRAA-->
+      <div class="col-md-6 text-center">
+        <a class=" btn btn-outline-light" href="https://getbootstrap.com/docs/5.2/components/buttons/" role="button" target="_blank" 
+          style="font-family: Bebas Neue, serif;font-size: xx-large;">Baixe Agora!</a>
+        <!--O link vai dar para a página da play store para baixar o app-->
+      </div>
     </div>
   </div>
+  <!--Fim Container Principal-->
 </body>
 
 <!--Javascript-->
