@@ -1,12 +1,12 @@
-body{
-    background-image: url(imagens/principal.png);
-}
-
 .myContainer{
     border-radius: 10px;
     padding: 20px;
     width: 50%;
     margin-top: 4%;
+}
+
+.margemTop{
+    margin-top: 10%;
 }
 
 /*IMPORTS*/
