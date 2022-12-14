@@ -6,6 +6,14 @@
     margin-top: 4%;
 }
 
+.otherContainer{
+    background-color: rgb(102, 155, 188);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 4%;
+    width: 60%;
+}
+
 .wholeContainer{
     width: 100%;
     background-color: #0e1124;
@@ -29,6 +37,10 @@
     margin-top: 4%;
 }
 
+.mgT-7{
+    margin-top: 7%;
+}
+
 .mgT-10{
     margin-top: 10%;
 }
@@ -47,6 +59,10 @@
 
 .mgB-4{
     margin-bottom: 4%;
+}
+
+.mgB-6{
+    margin-bottom: 6%;
 }
 
 .mgB-10{
