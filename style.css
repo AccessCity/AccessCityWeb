@@ -49,6 +49,10 @@
     margin-left: 6%;
 }
 
+.mgL-8{
+    margin-left: 8%;
+}
+
 .mgL-10{
     margin-left: 10%;
 }
@@ -76,6 +80,10 @@
 .mgLR-5{
     margin-left: 5%;
     margin-right: 5%;
+}
+
+.myPadding{
+    padding: 10px;
 }
 
 /*Classes Texto*/
