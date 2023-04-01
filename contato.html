@@ -1,4 +1,5 @@
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF=8">
   <meta hhtp-equiv="X-UA-Compatible" content="IE=edge">
@@ -62,11 +63,14 @@
       <!--Col texto e botão-->
       <div class="col-md-6 col-sm-4 d-grid">
         <div class="row" style="align-items: center;">
-          <h3 class="display-3 text-center texto-branco">Entre no <span style="text-transform: uppercase;">faq</span></h3>
+          <h3 class="display-3 text-center texto-branco">Entre no <span style="text-transform: uppercase;">faq</span>
+          </h3>
         </div>
         <div class="row" style="align-items: center;">
-          <a class=" btn btn-outline-danger mgB-4" href="https://getbootstrap.com/docs/5.2/components/buttons/" role="button" target="_blank" 
-          style="font-family: Bebas Neue, serif;font-size: 6ch;height: 7rem;text-transform: uppercase;">faq</a> <!--falta ajeitar o botão-->
+          <a class=" btn btn-outline-danger mgB-4" href="https://getbootstrap.com/docs/5.2/components/buttons/"
+            role="button" target="_blank"
+            style="font-family: Bebas Neue, serif;font-size: 6ch;height: 7rem;text-transform: uppercase;">faq</a>
+          <!--falta ajeitar o botão-->
         </div>
       </div>
     </div>
@@ -76,33 +80,45 @@
   <h2 class="display-2 text-center">ou</h2>
   <h2 class="display-2 text-center">entre em contato!</h2>
 
-  <!--Container Forms-->
-  <!--<div class="containerAbsolut">
-  </div>-->
-  <!--Fim Container Forms-->
+  <!--Continer Contato-->
+  <div class="container-fluid containerFit mgB-2 mgT-2">
+    <form action="" class="container">
+      <div class="row mt-2">
+        <div class="col-md-6 col-sm-12">
+          <label for="nome" class="form-label">Nome:</label>
+          <input type="text" name="nome" id="" class="form-control" placeholder="ex.: Vitor Almeida" required>
+        </div>
 
-  <!--Container Contato-->  <!--FALTA ADICIONAR FORMS-->
-  <div class="container-fluid wholeContainer mgT-2">
-    <div class="row">
-      <h4 class=" display-5 texto-branco"><i class="bi bi-envelope-fill"></i> E-mail</h4>
-    </div>
-    <div class="row mgT-2">
-      <p class="texto-branco">cttaccesscity@gmail.com.br</p>
-    </div>
-    <div class="row mgT-2">
-      <h4 class=" display-5 texto-branco" style="text-transform: uppercase;"><i class="bi bi-chat-right-text-fill"></i> sms</h4>
-    </div>
-    <div class="row mgT-2">
-      <p class="texto-branco">(19) 99765-8998</p>
-    </div>
+        <div class="col-md-6 col-sm-12">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" name="email" id="" class="form-control" placeholder="vitormeida@hotmail.com" required>
+        </div>
+      </div>
+
+      <div class="row mt-2">
+        <div class="col-md-6 col-sm-12">
+          <label for="telefone" class="form-label">Telefone:</label>
+          <input type="tel" name="telefone" id="" class="form-control" placeholder="(00) 00000-0000">
+        </div>
+
+        <div class="col-md-6 col-sm-12">
+          <label for="cidade" class="form-label">Assunto: </label>
+          <input type="text" name="cidade" id="" class="form-control" required>
+        </div>
+      </div>
+
+      <label for="mensagem" class="form-label mt-2">Mensagem</label>
+      <textarea name="mensagem" id="" cols="30" rows="10" class="form-control"required></textarea>
+
+      <button type="submit" class="btn btn-dark mt-2 me-auto"><i class="bi bi-send"></i> Enviar</button>
+        <button type="clear" class="btn btn-dark mt-2 me-auto"><i class="bi bi-trash"></i> Limpar</button>
+
+    </form>
   </div>
-  <!--Fim Container Contato-->
+  <!--Fim container Contato-->
 
   <!--Começo Footer-->
   <footer class="fluid-container pezinho">
-    <div class="row">
-      <p class="texto-branco">Todos os direitos reservados a Luanna Sachinelli Paggiaro ©</p>
-    </div>
     <div class="row">
       <div class="col-md-12">
         <img src="imagens/cotilagain.png">

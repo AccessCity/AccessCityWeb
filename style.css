@@ -6,6 +6,13 @@
     margin-top: 4%;
 }
 
+.containerFit{
+    position: relative;
+    width: 100%;
+    background-color: rgb(245, 238, 231);
+    padding: 20px;
+}
+
 .otherContainer{
     background-color: rgb(102, 155, 188);
     border-radius: 10px;
@@ -23,15 +30,9 @@
     border-color: black;
 }
 
-.containerAbsolut{
-    width: 40%;
-    position: absolute;
-    background-color: white;
-    border: 2px solid black;
-}
-
 .pezinho{
     background-color: #222224;
+    border-top: 2px solid rgb(85, 85, 87);
     padding: 30px;
     text-align: center;
 }
