@@ -23,16 +23,15 @@
 
 .wholeContainer{
     width: 100%;
-    position: relative;
-    background-color: #0e1124;
-    padding: 20px;
+    background-color: #2a3050;
+    padding: 40px;
     border-bottom: 2px;
     border-color: black;
 }
 
 .pezinho{
     background-color: #222224;
-    border-top: 2px solid rgb(85, 85, 87);
+    border-top: 2px solid rgb(62, 62, 63);
     padding: 30px;
     text-align: center;
 }
@@ -52,6 +51,10 @@
 
 .mgT-10{
     margin-top: 10%;
+}
+
+.mgL-4{
+    margin-left: 4%;
 }
 
 .mgL-6{
