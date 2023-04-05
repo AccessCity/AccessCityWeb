@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="imagens/Logo3.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <!--CSS only-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style type="text/css">
+        body{
+          /*background-image: url(imagens/principal.png);*/
+          background-color: rgb(102, 155, 188);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container containerLogin">
+        <h2 class="text-center"><span style="text-transform: uppercase;">Cadastro</span></h2>
+        <form action="" class="container">
+            <div class="col-md-11">
+                <div class="row">
+                    <label for="user" class="form-label">Usuário:</label>
+                    <input type="text" name="user" id="" class="form-control" placeholder="ex.: Vitor Almeida" required>
+                </div><br>
+                <div class="row">
+                    <label for="date" class="form-label">Data de nascimento:</label>
+                    <input type="date" name="date" id="" class="form-control" required>
+                </div><br>
+                <div class="row">
+                    <label for="email" class="form-label">E-mail:</label>
+                    <input type="email" name="email" id="" class="form-control" placeholder="vitor@hotmail.com" required>
+                </div><br>
+                <div class="row">
+                    <label for="tel" class="form-label">Celular:</label>
+                    <input type="tel" name="tel" id="" class="form-control" placeholder="(00) 00000-0000" required>
+                </div><br>
+                <!--<div class="row">
+                    <label for="checkbox" class="form-label">Deficiências:</label>
+                    <input type="checkbox" name="checkbox" id="" class="form-control" required>
+                </div><br>-->
+                <div class="row">
+                    <label for="password" class="form-label">Senha:</label>
+                    <input type="password" name="password" id="" class="form-control" placeholder="*********" required>
+                </div>
+            </div><br>
+            <button type="submit" class="btn btn-dark mt-2 me-auto"> Cadastrar</button>
+        </form>
+    </div>
+
+</body>
+</html>
