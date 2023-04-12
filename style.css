@@ -1,12 +1,15 @@
 /*Classes Container*/
-.myContainer{
+.myContainer {
     border-radius: 10px;
     padding: 20px;
     width: 50%;
-    margin-top: 4%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.containerFit{
+.containerFit {
     position: relative;
     width: 100%;
     padding: 20px;
@@ -116,6 +119,16 @@ p{
 
 .texto-central{
     text-align: center;
+}
+
+/*MEDIA SCREEN*/
+@media screen and (max-width: 720px){
+    .containerLogin{
+        width: 80%;
+    }
+    .myContainer{
+        width: 90%;
+    }
 }
 
 /*IMPORTS*/
