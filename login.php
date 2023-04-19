@@ -24,7 +24,7 @@
             $usuario = $_POST["user"];
             $senha = $_POST["senha"];
 
-            if($usuario=="admin" && $senha=="1234"){
+            if($usuario=="admin" && $senha=="2244"){
                 header("Location: https://github.com/AccessCity/AccessCityWeb");
                 die;
             } else{
