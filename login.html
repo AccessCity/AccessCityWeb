@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="imagens/Logo3.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log In</title>
+    <title>Log-In</title>
 
     <!--CSS only-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -19,22 +19,9 @@
     </style>
 </head>
 <body>
-    <?php
-        if(isset($_POST["enviar"])){
-            $usuario = $_POST["user"];
-            $senha = $_POST["senha"];
-
-            if($usuario=="admin" && $senha=="2244"){
-                header("Location: https://github.com/AccessCity/AccessCityWeb");
-                die;
-            } else{
-                echo "Acesso negado!";
-            }
-        }
-    ?>
-    
+    <a class="btn btn-dark mt-2 mgL-2 ms-2 me-auto" role="button" href="index.html">Voltar</a>
     <div class="container containerTela">
-        <h2 class="text-center">Bem vindo de volta</h2>
+        <h2 class="text-center">Bem vindo de volta!</h2>
         <div class="col-md-12"><hr></div>
         <form action="login2.php" method="post" class="container">
             <div class="col-md-12">
@@ -47,7 +34,7 @@
                     <input type="password" name="password" id="" class="form-control" placeholder="*********" required>
                 </div>
             </div><br>
-            <button type="submit" name="enviar" value="enviar" class="btn btn-dark mt-2 me-auto"> Log In</button> ou 
+            <button type="submit" name="enviar" value="enviar" class="btn btn-dark mt-2 me-auto"> Log-In</button> ou 
             <a class="btn btn-danger mt-2 me-auto" role="button" href="cadastro.html">Cadastre-se!</a>
         </form>
     </div>

@@ -14,17 +14,16 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <style type="text/css">
         body{
-          /*background-image: url(imagens/principal.png);*/
           background-color: rgb(102, 155, 188);
         }
     </style>
 </head>
 <body>
-    
+    <a class="btn btn-dark mt-2 mgL-2 ms-2 me-auto" role="button" href="index.html">Voltar</a>
     <div class="container containerCadastro">
         <h2 class="text-center">Crie sua conta</h2>
         <div class="col-md-12"><hr></div>
-        <form action="" class="container">
+        <form action="" class="container" method="post">
             <div class="row">
                 <div class="col-md-5">
                     <div class="row">
@@ -51,12 +50,16 @@
                         <label for="deficiencia">Deficiências:</label>
                         <div class="row">
                             <div class="col-md-4">
-                                <div><input type="checkbox" id="motora" name="motora"><label for="motora"> Motora</label></div>
-                                <div><input type="checkbox" id="visual" name="visual"><label for="visual"> Visual</label></div>
+                                <div><input type="checkbox" id="motora" name="motora"><label for="motora">
+                                    <span class="ms-1"> Motora</span></label></div>
+                                <div><input type="checkbox" id="visual" name="visual"><label for="visual"> 
+                                    <span class="ms-1"> Visual</span></label></div>
                             </div>
                             <div class="col-md-4">
-                                <div><input type="checkbox" id="motora" name="motora"><label for="motora"> Auditiva</label></div>
-                                <div><input type="checkbox" id="outro" name="outro"><label for="outro"> Outro</label></div>
+                                <div><input type="checkbox" id="motora" name="motora"><label for="motora"> 
+                                    <span class="ms-1"> Auditiva</span></label></div>
+                                <div><input type="checkbox" id="outro" name="outro"><label for="outro"> 
+                                    <span class="ms-1"> Outros</span></label></div>
                             </div>
                         </div>
                     </div><br>
