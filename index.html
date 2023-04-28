@@ -69,11 +69,27 @@
     <div class="row pt-2">
       <img src="imagens/nome.png" alt="AccessCity">
     </div>
-    <div class="row pt-4">
-      <div class="col-md-6 d-grid mx-auto">
-        <a class=" btn btn-outline-light" href="https://getbootstrap.com/docs/5.2/components/buttons/" role="button"
-          target="_blank" style="font-family: Bebas Neue, serif;font-size: xx-large;text-transform: uppercase;">baixe
-          agora!</a>
+    <div class="row">
+      <div class="col-md-5 d-grid mx-auto">
+        <a class="myButton text-center" href="#" style="font-family: Bebas Neue, sans-serif">baixe agora!</a>
+          <script>
+            const buttons = document.querySelectorAll('.myButton');
+            buttons.forEach(btn => {
+                btn.addEventListener('click', function(e){
+                    let x = e.clientX - e.target.offsetLeft;
+                    let y = e.clientY - e.target.offsetTop;
+                    
+                    let ripples = document.createElement('.mySpan');
+                    ripples.style.left = x + 'px';
+                    ripples.style.top = y + 'px';
+                    this.appendChild(ripples);
+    
+                    setTimeout(() =>{
+                        ripples.remove()
+                    }, 1000);
+                })
+            })
+          </script>
         <!--O link vai dar para a página da play store para baixar o app-->
       </div>
     </div>
