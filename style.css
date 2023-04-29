@@ -167,24 +167,26 @@
     text-decoration: none;
     cursor: pointer;
     color: white;
+    box-shadow: #fff;
     outline: none;
-    background: linear-gradient(-45deg, rgb(14, 17, 36), #2a3050);
+    background: hsl(233, 35%, 19%);
 }
 
-/*nao ta funcionando >_<*/
 .ripple{
     background-position: center;
-    transition: background 0.8s;
+    transition: all 0.8s;
 }
-/*.ripple:hover {
-    background: linear-gradient(-45deg, rgb(101, 109, 158rgb(155, 162, 202)d75) 
-    radial-gradient(circle, transparent 1%, linear-gradient(-45deg, rgb(101, 109, 158rgb(155, 162, 202)d75)   1%) 
+.ripple:hover {
+    background: hsl(233, 27%, 26%)
+    radial-gradient(circle, transparent 1%, #404568 1%) 
     center/15000%;
-}*/
+    box-shadow: 0 0 2rem hsla(0, 100%, 100%, 0.8);
+}
 .ripple:active {
-    background: linear-gradient(-45deg, rgb(14, 17, 36), #2a3050);
+    background-color: #2a3050;
     background-size: 100%;
-    transition: background 0s;
+    transition: all 0s;
+    box-shadow: 0 0 1rem hsla(0, 100%, 100%, 0.8);
 }
 
 /*Classes de margem*/
