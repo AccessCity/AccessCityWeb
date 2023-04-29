@@ -176,10 +176,11 @@
     background-position: center;
     transition: background 0.8s;
 }
-.ripple:hover {
+/*.ripple:hover {
     background: linear-gradient(-45deg, rgb(101, 109, 158rgb(155, 162, 202)d75) 
-    radial-gradient(circle, transparent 1%, linear-gradient(-45deg, rgb(101, 109, 158rgb(155, 162, 202)d75)   1%) center/15000%;
-}
+    radial-gradient(circle, transparent 1%, linear-gradient(-45deg, rgb(101, 109, 158rgb(155, 162, 202)d75)   1%) 
+    center/15000%;
+}*/
 .ripple:active {
     background: linear-gradient(-45deg, rgb(14, 17, 36), #2a3050);
     background-size: 100%;
