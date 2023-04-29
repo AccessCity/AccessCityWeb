@@ -136,27 +136,33 @@ p{
 
 /*TESTES*/
 .myButton{
-    position: relative;
-    display: inline-block;
+    border: none;
+    border-radius: 2px;
     padding: 12px 36px;
-    margin: 10px 0;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 25px;
-    letter-spacing: 2px;
     border-radius: 40px;
-    overflow: hidden;
+    font-size: 25px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    outline: none;
     background: linear-gradient(-45deg, rgb(14, 17, 36), #2a3050);
 }
 
-.mySpan{
-    position: absolute;
-    background: #fff;
-    transform: translate(-50%,-50%);
-    pointer-events: none;
-    border-radius: 50%;
-    animation: animate 1s linear infinite;
+/*nao ta funcionando >_<*/
+.ripple{
+    background-position: center;
+    transition: background 0.8s;
+}
+.ripple:hover {
+    background: linear-gradient(-45deg, rgb(101, 109, 158rgb(155, 162, 202)d75) 
+    radial-gradient(circle, transparent 1%, linear-gradient(-45deg, rgb(101, 109, 158rgb(155, 162, 202)d75)   1%) center/15000%;
+}
+.ripple:active {
+    background: linear-gradient(-45deg, rgb(14, 17, 36), #2a3050);
+    background-size: 100%;
+    transition: background 0s;
 }
 
 /*ARROBAS*/
@@ -172,19 +178,6 @@ p{
     }
     .card-body{
         height: fit-content;
-    }
-}
-
-@keyframes animate{
-    0%{
-        width: 0px;
-        height: 0px;
-        opacity: 0.5;
-    }
-    100%{
-        width: 500px;
-        height: 500px;
-        opacity: 0;
     }
 }
 

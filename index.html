@@ -31,6 +31,11 @@
 			}
 		}
   </style>
+  <script>
+    function botao(){
+      document.getElementById("botaoMain").style.color = "#fff";
+    }
+  </script>
 </head>
 <body>
   <!--Começo NavBar-->
@@ -71,30 +76,14 @@
     </div>
     <div class="row">
       <div class="col-md-5 d-grid mx-auto">
-        <a class="myButton text-center" href="#" style="font-family: Bebas Neue, sans-serif">baixe agora!</a>
-          <script>
-            const buttons = document.querySelectorAll('.myButton');
-            buttons.forEach(btn => {
-                btn.addEventListener('click', function(e){
-                    let x = e.clientX - e.target.offsetLeft;
-                    let y = e.clientY - e.target.offsetTop;
-                    
-                    let ripples = document.createElement('.mySpan');
-                    ripples.style.left = x + 'px';
-                    ripples.style.top = y + 'px';
-                    this.appendChild(ripples);
-    
-                    setTimeout(() =>{
-                        ripples.remove()
-                    }, 1000);
-                })
-            })
-          </script>
+        <a class="myButton ripple text-center" onmouseover="botao();" href="#" id="botaoMain" 
+        style="font-family: Bebas Neue, sans-serif">baixe agora!</a>
         <!--O link vai dar para a página da play store para baixar o app-->
       </div>
     </div>
   </div>
   <!--Fim Container Principal-->
+
 </body>
 
 <!--Javascript-->
