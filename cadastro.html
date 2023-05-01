@@ -16,6 +16,9 @@
         body{
           background-color: rgb(102, 155, 188);
         }
+        .form-label{
+            font-weight: 500;
+        }
     </style>
 </head>
 <body>
@@ -25,7 +28,7 @@
         <h2 class="text-center">Crie sua conta</h2>
         <div class="col-md-12"><hr></div>
         <form action="" class="container" method="post">
-            <div class="row">
+            <div class="row justify-content-evenly">
                 <div class="col-md-5">
                     <div class="row">
                         <label for="user" class="form-label">Usuário:</label>
@@ -48,7 +51,7 @@
                         pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required>
                     </div><br>
                     <div class="row">
-                        <label for="deficiencia">Deficiências:</label>
+                        <label for="deficiencia" style="font-weight: 500;">Deficiências:</label>
                         <div class="row">
                             <div class="col-md-4">
                                 <div><input type="checkbox" id="motora" name="motora"><label for="motora">
@@ -70,8 +73,10 @@
                     </div>
                 </div><br>
             </div>
-            <div class="col-md-2 ms-auto">
-                <button type="submit" name="enviar" value="enviar" class="btn btn-dark"> Cadastrar</button>
+            <div class="row">
+                <div class="col-md-2 ms-auto">
+                    <button type="submit" name="enviar" value="enviar" class="btn btn-dark"> Cadastrar</button>
+                </div>
             </div>
         </form>
     </div>
