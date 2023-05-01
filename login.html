@@ -16,10 +16,13 @@
         body{
           background-color: rgb(102, 155, 188);
         }
+        .fim{
+            align-self: flex-end;
+        }
     </style>
 </head>
 <body>
-    <a class="btn btn-dark mt-2 mgL-2 ms-2 me-auto" role="button" href="index.html">Voltar</a>
+    <a class="btn btn-dark mt-2 mgL-2 ms-2 me-auto" role="button" href="tela.html">Voltar</a>
     <div class="container containerTela">
         <h2 class="text-center">Bem vindo de volta!</h2>
         <div class="col-md-12"><hr></div>
@@ -27,15 +30,16 @@
             <div class="col-md-12">
                 <div class="row">
                     <label for="user" class="form-label">Usuário:</label>
-                    <input type="text" name="user" id="" class="form-control" placeholder="ex.: Vitor Almeida" required>
+                    <input type="text" name="user" id="" class="form-control" placeholder="João Silva" required>
                 </div><br>
                 <div class="row">
                     <label for="password" class="form-label">Senha:</label>
-                    <input type="password" name="password" id="" class="form-control" placeholder="*********" required>
+                    <input type="password" name="password" id="" class="form-control"placeholder="******" required>
                 </div>
             </div><br>
-            <button type="submit" name="enviar" value="enviar" class="btn btn-dark mt-2 me-auto"> Log-In</button> ou 
-            <a class="btn btn-danger mt-2 me-auto" role="button" href="cadastro.html">Cadastre-se!</a>
+            <div class="col-md-3 ms-auto">
+                <button type="submit" name="enviar" value="enviar" class="btn btn-dark"> Log-In</button>
+            </div>
         </form>
     </div>
 
