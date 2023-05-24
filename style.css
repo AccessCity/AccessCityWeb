@@ -9,10 +9,11 @@
     transform: translate(-50%, -50%);
 }
 
-.containerCard{
+.containerCard{    
     border-radius: 20px;
     background-color: #e6dfd2;
     border: 2px solid #111;
+    align-self: center;
 }
 
 .containerFit {
