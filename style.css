@@ -9,6 +9,12 @@
     transform: translate(-50%, -50%);
 }
 
+.containerCard{
+    border-radius: 20px;
+    background-color: #e6dfd2;
+    border: 2px solid #111;
+}
+
 .containerFit {
     position: relative;
     width: 100%;
@@ -21,20 +27,6 @@
     padding: 5px;
     margin-top: 4%;
     width: 60%;
-}
-
-.wholeContainer{
-    height: 110vh;
-    width: 100%;
-    background: #2a3050;
-    padding: 5px;
-    border-bottom: 2px;
-    border-color: black;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .containerCadastro{
@@ -60,16 +52,122 @@
     text-align: center;
 }
 
-/*CARDS*/
-.box{
+/*CARD CELULAR*/
+.cont{
     position: relative;
-    width: 1280px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+}
+.cont .car{
+    position: relative;
+    width: 550px;
+    height: 350px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(45deg, #edede9, #e3d5ca, #f5ebe0);
+    transition: 0.5s;
+    border: #111 2px solid;
+}
+.cont .car img{
+    position: absolute;
+    bottom: 0;
+    height: 320px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
 }
 
+.cont .car:hover img{
+    left: 75%;
+    height: 350px;
+}
+
+.cont .car .conteudo{
+    padding: 20px 20px 20px 40px;
+    position: relative;
+    width: 50%;
+    left:20%;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.cont .car:hover .conteudo{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.cont .car .conteudo h2{
+    text-transform: uppercase;
+    font-size: 2.2em;
+    line-height: 1em;
+}
+
+.cont .car .conteudo a{
+    position: relative;
+    color: #111;
+    background: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+@media (max-width: 991px){
+    .cont .car{
+        width: auto;
+        max-width: 600px;
+        align-items: flex-start;
+    }
+
+    .cont .car:hover{
+        height: 600px;
+    }
+
+    .cont .car:hover img{
+        left: 50%;
+        height: 350px;
+    }
+
+    .cont .car .conteudo{
+        width: 100%;
+        left: 0;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 767px){
+    .cont{
+        flex-direction: column;
+    }
+    .cont .car{
+        margin: 40px 20px;
+    }
+}
+
+@media (max-width: 420px){
+    .cont .car .conteudo{
+        padding: 30px;
+    }
+    .cont .car:hover img{
+        height: 300px;
+    }
+}  
+
+/*CARD EQUIPE*/
+.box{
+    position: relative;
+    width: 1280px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
 .box .card{
     position: relative;
     width: 300px;

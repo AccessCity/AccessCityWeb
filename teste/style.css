@@ -12,13 +12,13 @@ body{
     align-items: center;
     min-height: 100vh;
 }
-.container{
+.cont{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.container .card{
+.cont .car{
     position: relative;
     width: 600px;
     height: 350px;
@@ -29,7 +29,7 @@ body{
     background: linear-gradient(45deg, #caf0f8, #90e0ef, #00b4d8);
     transition: 0.5s;
 }
-.container .card img{
+.cont .car img{
     position: absolute;
     bottom: 0;
     height: 400px;
@@ -38,12 +38,12 @@ body{
     transition: 0.5s;
 }
 
-.container .card:hover img{
+.cont .car:hover img{
     left: 75%;
     height: 500px;
 }
 
-.container .card .content{
+.cont .car .conteudo{
     padding: 20px 20px 20px 40px;
     position: relative;
     width: 50%;
@@ -53,20 +53,20 @@ body{
     visibility: hidden;
 }
 
-.container .card:hover .content{
+.cont .car:hover .conteudo{
     left: 0;
     opacity: 1;
     visibility: visible;
 }
 
-.container .card .content h2{
+.cont .car .conteudo h2{
     color: #fff;
     text-transform: uppercase;
     font-size: 2.2em;
     line-height: 1em;
 }
 
-.container .card .content a{
+.cont .car .conteudo a{
     position: relative;
     color: #111;
     background: #fff;
@@ -78,22 +78,22 @@ body{
 }
 
 @media (max-width: 991px){
-    .container .card{
+    .cont .car{
         width: auto;
         max-width: 600px;
         align-items: flex-start;
     }
 
-    .container .card:hover{
+    .cont .car:hover{
         height: 600px;
     }
 
-    .container .card:hover img{
+    .cont .car:hover img{
         left: 50%;
         height: 350px;
     }
 
-    .container .card .content{
+    .cont .car .conteudo{
         width: 100%;
         left: 0;
         padding: 20px;
@@ -101,19 +101,19 @@ body{
 }
 
 @media (max-width: 767px){
-    .container{
+    .cont{
         flex-direction: column;
     }
-    .container .card{
+    .cont .car{
         margin: 40px 20px;
     }
 }
 
 @media (max-width: 420px){
-    .container .card .content{
+    .cont .car .conteudo{
         padding: 30px;
     }
-    .container .card:hover img{
+    .cont .car:hover img{
         height: 300px;
     }
 }
