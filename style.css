@@ -158,7 +158,7 @@
     .cont .car:hover img{
         height: 300px;
     }
-}  
+}
 
 /*CARD EQUIPE*/
 .box{
@@ -275,6 +275,174 @@
     background-size: 100%;
     transition: all 0s;
     box-shadow: 0 0 1rem hsla(0, 100%, 100%, 0.8);
+}
+
+/*FOOTER*/
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background-color: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .containerF{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer .containerF .sec {
+    margin-right: 30px;
+}
+
+footer .containerF .sec.aboutus{
+    width: 40%;
+}
+
+footer .containerF h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+footer .containerF h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #669bbc;
+}
+
+footer p{
+    color: #999;
+
+}
+
+.sci{
+    margin-top: 20px;
+    display: flex;
+}
+
+.sci li{
+    list-style: none;
+}
+
+.sci li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.sci li a:hover{
+    background-color: #f00;
+}
+
+.sci li a .bi{
+    color: #fff;
+    font-size: 20px;
+}
+
+.quickLinks{
+    position: relative;
+    width: 25%;
+}
+
+.quicklinks{
+    list-style: none;
+}
+
+.quicklinks ul li a{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.quicklinks ul li a:hover{
+    color: #fff;
+}
+
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+
+.contact .info{
+    position: relative;
+}
+
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contact .info li span:nth-child(1){
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.contact .info li span{
+    color: #999;
+}
+
+.contact .info li a{
+    color: #999;
+    text-decoration: none;
+}
+
+.contact .info li a:hover{
+    color: #fff;
+}
+
+footer ul .quickinks{
+    padding: 0px 0px 0px 10px !important;
+}
+
+footer ul{
+    padding: 0;
+}
+
+.copyrightText{
+    width: 100%;
+    background-color: #181818;
+    padding: 8px 100px;
+    text-align: center;
+    color: #999;
+}
+
+@media (max-width: 991px){
+    footer{
+        padding: 40px;
+    }
+    footer .containerF{
+        flex-direction: column;
+    }
+    footer .containerF .sec{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    footer .containerF .sec.aboutus,.quickLinks,.contact{
+        width: 100%;
+    }
+    .copyrightText{
+        padding: 8px 40px;
+    }
 }
 
 /*Classes de margem*/

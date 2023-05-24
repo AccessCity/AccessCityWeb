@@ -27,29 +27,29 @@ footer{
     flex-wrap: wrap;
 }
 
-footer .container{
+footer .containerF{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
-footer .container .sec {
+footer .containerF .sec {
     margin-right: 30px;
 }
 
-footer .container .sec.aboutus{
+footer .containerF .sec.aboutus{
     width: 40%;
 }
 
-footer .container h2{
+footer .containerF h2{
     position: relative;
     color: #fff;
     font-weight: 500;
     margin-bottom: 15px;
 }
 
-footer .container h2:before{
+footer .containerF h2:before{
     content: '';
     position: absolute;
     bottom: -5px;
@@ -160,14 +160,14 @@ footer p{
     footer{
         padding: 40px;
     }
-    footer .container{
+    footer .containerF{
         flex-direction: column;
     }
-    footer .container .sec{
+    footer .containerF .sec{
         margin-right: 0;
         margin-bottom: 40px;
     }
-    footer .container .sec.aboutus,.quickLinks,.contact{
+    footer .containerF .sec.aboutus,.quickLinks,.contact{
         width: 100%;
     }
     .copyrightText{
