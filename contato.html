@@ -16,7 +16,24 @@
     body {
       background-color: rgb(230, 223, 210);
     }
+    .copyrightText{
+      margin-bottom: 0;
+    }
+    @media (max-width: 992px){
+      footer{
+        margin-top: 4%;
+      }
+    }
   </style>
+  <script>
+    Array.from(document.querySelectorAll(".descContato")).forEach(c => {
+      c.addEventListener("mouseover", e => {
+        if(e.keyCode === 9){
+          e.target.click();
+        }
+      })
+    })
+  </script>
 </head>
 
 <body>
@@ -51,83 +68,63 @@
   </nav>
   <!--Final NavBar-->
 
-  <h1 class="display-2 mgT-2 text-center">Tem alguma dúvida?</h1>
+  <h1 class="display-3 pt-3 text-center">Alguma sugestão ou dúvida?</h1>
 
-  <!--Container FAQ-->
-  <div class="container otherContainer text-center">
-    <div class="row">
-      <!--Col img-->
-      <div class="col-md-5 col-sm-4">
-        <img src="imagens/faq.png" height="95%" width="95%" alt="Símbolo FAQ">
-      </div>
-      <!--Col texto e botão-->
-      <div class="col-md-6 col-sm-4 d-grid pt-4">
-        <div class="row" style="align-items: center;">
-          <h3 class="display-3 text-center texto-branco">Entre no <span style="text-transform: uppercase;">faq</span>
-          </h3>
+  <!--Container Contato e FAQ-->
+  <div class="container-fluid d-flex">
+    <div class="row containerContato justify-content-evenly flex-fill">
+    <div class="cardContato" >
+        <div class="imgContato">
+            <img src="imagens/faq.png" height="200px" width="200px" alt="Símbolo do FAQ">
         </div>
-        <div class="row" style="justify-content: center;">
-          <a class=" btn btn-danger mgB-4" href="https://getbootstrap.com/docs/5.2/components/buttons/" role="button"
-            target="_blank" style="font-family: Bebas Neue, serif;font-size: 6ch;height: 5.5rem;
-              width: 15rem;text-transform: uppercase;">faq</a>
-          <!--falta ajeitar o botão-->
+        <div class="descContato">
+            <div>
+                <h3>FAQ</h3>
+                <p>Está com alguma dúvida relacionada ao aplicativo ou site? Clique aqui para ser
+                  redirecionado ao nosso FAQ.</p>
+                <a href="#" tabindex="0">FAQ</a>
+            </div>
         </div>
-      </div>
+    </div>
+    <div class="cardContato">
+        <div class="imgContato">
+            <img src="imagens/playstore.png" height="200px" width="200px" alt="Símbolo da PlayStore">
+        </div>
+        <div class="descContato">
+            <div>
+                <h3>PlayStore</h3>
+                <p>Quer comentar ou sugerir alguma melhora ao projeto? Clique aqui para ser redirecionado à seção 
+                  de comentários do aplicativo na PlayStore.</p>
+                <a href="#" tabindex="0">Comente!</a>
+            </div>
+        </div>
+    </div>
     </div>
   </div>
-  <!--Fim container FAQ-->
+  <!--Fim Container Contato e FAQ-->
 
-  <h2 class="display-2 text-center pt-2">que tal</h2>
-  <h2 class="display-2 text-center mgB-10">um <span lang="en-us">Feedback?</span></h2>
-
-  <!--Continer Contato
-  <div class="container otherContainer text-center">
-    <div class="row">
-      <!--Col img
-      <div class="col-md-5 col-sm-4">
-        <img src="imagens/playstore.png" height="100%" width="100%" alt="Símbolo PlayStore">
-      </div>
-      <!--Col texto e botão
-      <div class="col-md-6 col-sm-4 d-grid">
-        <div class="row" style="align-items: center;">
-          <h3 class="display-3 text-center texto-branco pt-4"><span lang="en-us">PlayStore</span>
-          </h3>
-        </div>
-        <div class="row" style="align-items: center;">
-          <a class=" btn btn-danger mgB-4" href="https://getbootstrap.com/docs/5.2/components/buttons/"
-            role="button" target="_blank" 
-            style="font-family: Bebas Neue, serif;font-size: 5ch;height: 7rem;text-transform: uppercase;">Nos avalie!</a>
-          <!--falta ajeitar o botão
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--Fim container Contato-->
-
-  <!--Começo Footer-->
+  <!--Começo Novo Footer-->
   <footer>
     <div class="containerF">
       <div class="sec aboutus">
         <h2>Sobre nós</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum velit neque ut praesentium, earum nemo
-          doloremque, itaque
-          sed numquam deserunt, totam iusto enim eum quis libero quibusdam quae quasi? Libero.</p>
+        <p>AccessCity é um projeto de TCC de um aplicativo mobile que tem como objetivo tornar as cidades brasileiras mais acessíveis
+          para pessoas com deficiência e necessidades especiais. Ele foi desenvolvido pelo Colégio Técnico de Limeira da 
+          <span style="text-transform: uppercase;">UNICAMP</span>.</p>
         <ul class="sci">
+          <li><a href="#"><i class="bi bi-envelope"></i></a></li>
           <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-          <li><a href="#"><i class="bi bi-twitter"></i></a></li>
           <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-          <li><a href="#"><i class="bi bi-youtube"></i></a></li>
         </ul>
       </div>
       <div class="sec quicklinks">
         <h2>Links Rápidos</h2>
         <ul>
-          <li><a href="#">About</a></li>
+          <li><a href="#">Download</a></li>
+          <li><a href="#">Log-In e Cadastro</a></li>
+          <li><a href="#">Sobre Nós</a></li>
           <li><a href="#">FAQ</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Help</a></li>
-          <li><a href="#">Terms & Conditions</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#">Contato</a></li>
         </ul>
       </div>
       <div class="sec contact">
@@ -135,15 +132,15 @@
         <ul class="info">
           <li>
             <span><i class="bi bi-geo-alt-fill"></i></span>
-            <span>647 Linda Rua<br>
-              Cordeirópolis, CEP 130888-34,<br>BR</span>
+            <span>Rua Paschoal Marmo, 1888, Jardim<br>
+              Nova Itália, CEP 13484-332</span>
           </li>
-          <li>
+          <!--<li>
             <span><i class="bi bi-telephone-fill"></i></span>
             <p><a href="tel: 123456789">(19) 99999-9999</a><br>
               <a href="tel: 123456789">(19) 99999-9999</a>
             </p>
-          </li>
+          </li>-->
           <li>
             <span><i class="bi bi-envelope-fill"></i></span>
             <p><a href="mailto: google@gmail.com">accesscity@gmail.com</a></p>
@@ -155,8 +152,7 @@
   <div class="copyrightText">
     <p>Copyright © 2023 AccessCity. All Rights Reserved.</p>
   </div>
-  <!--Fim footer-->
-
+  <!--Fim Footer-->
 </body>
 
 <!--Javascript-->

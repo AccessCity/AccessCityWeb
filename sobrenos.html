@@ -1,7 +1,7 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF=8">
+  <meta charset="UTF-8">
   <meta hhtp-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="shortcut icon" href="imagens/Logo3.png" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,13 +16,74 @@
     body {
       background-color: #e6dfd2;
     }
-
-    .container {
-      padding: 0;
+    .containerHist{
+      background: none;
     }
-
+    .containerHist2{
+      box-shadow: none;
+    }
     .recheio{
-      padding-top: 10ch;
+      padding-top: 10vh;
+    }
+    .desrecheio{
+      margin-top: -40px;
+    }
+    @media screen and (max-width: 1024px) {
+      #imgSB1{
+        height: 350px;
+      }
+      #imgSB2{
+        height: 250px;
+      }
+      .desrecheio{
+        margin-top: 70px;
+      }
+      .recheio{
+        padding-top: 0;
+      }
+      .cardE{
+        margin: 10px;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      #imgSB1{
+        height: 350px;
+      }
+      #imgSB2{
+        height: 250px;
+      }
+      .recheio{
+        padding-top: 2vh;
+      }
+      .desrecheio{
+        margin-top: 50px;
+      }
+      .cardE{
+        margin: 10px;
+      }
+    }
+    @media screen and (max-width: 550px) {
+      #imgSB1{
+        visibility: hidden;
+      }
+      #imgSB2{
+        visibility: hidden;
+      }
+      .desrecheio{
+        margin-top: -550px;
+      }
+      .containerSB{
+        width: 90%;
+      }
+      .cardE{
+        margin: 10px;
+      }
+      .containerHist{
+        padding-left: 20%;
+      }
+      .containerHist2{
+        padding-left: 20%;
+      }
     }
   </style>
 </head>
@@ -31,7 +92,7 @@
   <!--Começo NavBar-->
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(102, 155, 188);">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><img src="imagens/Logo3.png" height="40px" width="40px"></a>
+      <a class="navbar-brand" href="index.html"><img src="imagens/Logo3.png" height="40px" width="40px" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -52,7 +113,7 @@
           </li>
         </ul>
         <form class="d-flex" role="search">
-          <a class="btn btn-light" role="button" type="submit" href="tela.html">Log In</a>
+          <a class="btn btn-light" role="a" type="submit" href="tela.html">Log In</a>
         </form>
       </div>
     </div>
@@ -60,51 +121,47 @@
   <!--Final NavBar-->
 
   <!--Container da História-->
-  <h1 class="display-2 text-center">Sobre nós</h1>
+  <h1 class="display-3 pt-3 text-center">Sobre nós</h1>
 
   <!--Novo Container História-->
   <div class="container-fluid pt-3">
-    <div class="row d-flex flex-fill justify-content-evenly">
-      <div class="col-md-4 recheio">
-        <div class="row containerCard justify-content-center align-items-center align-self-center">
-          <div class="col-md-12">
+    <div class="row containerHist d-flex flex-fill justify-content-evenly">
+      <div class="col-md-5 recheio">
+        <div class="row containerSB">
+          <div class="col-md-12" style="background-color: #669bbc;border-radius: 18px 18px 0 0;">
             <h2 class="display-4 text-center">O que é <span lang="en-us">AccessCity</span>?</h2>
           </div>
-          <div class="col-md-9">
-            <p class="pt-4 text-center"><span lang="en-us">AccessCity</span> é um aplicativo <span
-                lang="en-us">mobile</span> que tem
-              como objetivo tornar as cidades brasileiras mais acessíveis. A aplicação auxilia no uso de transporte
-              público,
-              utiliza filtros para avaliação de estabelecimentos baseados em sua acessibilidade (restaurantes, parques,
-              escolas, etc) e possui scanner e atalhos para armazenar uma cópia do passe livre e outros documentos
-              importantes
-              como laudos.</p>
+          <div class="col-md-12 pt-3" style="background-color: #edede9;border-radius: 0 0 20px 20px;">
+            <p class="text-center"><span lang="en-us">AccessCity</span> é um aplicativo <span lang="en-us">mobile</span>
+              que tem como objetivo tornar as cidades brasileiras mais acessíveis. A aplicação auxilia no uso de
+              transporte
+              público, utiliza filtros para avaliação de estabelecimentos baseados em sua acessibilidade (restaurantes,
+              parques,
+              escolas, etc), além de possuir um scanner e atalhos para armazenar uma cópia do passe livre e outros
+              documentos
+              importantes como laudos.</p>
           </div>
         </div>
       </div>
       <div class="col-md-5 align-items-start">
-        <img src="imagens/freepik.png" height="500px">
+        <img src="imagens/freepik/freepik.png" height="500px" id="imgSB1" alt="Imagem de ilustração de pessoas com 
+        dispositivos eletrônicos com símbolos de acessibilidade">
       </div>
     </div>
 
-    <div class="row d-flex flex-fill justify-content-evenly">
-      <div class="col-md-4 align-items-start">
-        <img src="imagens/freepik2.png" height="400px">
+    <div class="row d-flex flex-fill justify-content-evenly desrecheio">
+      <div class="col-md-5 align-items-start">
+        <img src="imagens/freepik/freepik4.png" height="400px" id="imgSB2" alt="Símbolos relacionados a estudos, 
+        faculdade juntamente com a logo da unicamp">
       </div>
-      <div class="col-md-4 recheio">
-        <div class="row containerCard justify-content-center align-items-center align-self-center">
-          <div class="col-md-12">
+      <div class="col-md-5 recheio containerHist2">
+        <div class="row containerSB">
+          <div class="col-md-12" style="background-color: #669bbc;border-radius: 18px 18px 0 0;">
             <h2 class="display-4 text-center">De onde isso veio?</h2>
           </div>
-          <div class="col-md-9">
-            <p class="pt-4 text-center"><span lang="en-us">AccessCity</span> é um aplicativo <span
-                lang="en-us">mobile</span> que tem
-              como objetivo tornar as cidades brasileiras mais acessíveis. A aplicação auxilia no uso de transporte
-              público,
-              utiliza filtros para avaliação de estabelecimentos baseados em sua acessibilidade (restaurantes, parques,
-              escolas, etc) e possui scanner e atalhos para armazenar uma cópia do passe livre e outros documentos
-              importantes
-              como laudos.</p>
+          <div class="col-md-12 pt-3" style="background-color: #edede9;border-radius: 0 0 20px 20px;">
+            <p class="text-center"><span lang="en-us">AcessCity</span> é um projeto de <span style="text-transform: uppercase;">TCC</span> do Colégio Técnico de Limeira da 
+              <span style="text-transform: uppercase;">UNICAMP</span> dentro do curso de Desenvolvimento de Sistemas que se iniciou no ano de 2022.</p>
           </div>
         </div>
       </div>
@@ -116,160 +173,148 @@
 
   <!--Container Funcionalidades-->
   <div class="container-fluid d-flex pt-4">
-    <div class="row cont justify-content-evenly flex-fill">
-      <div class="car">
-        <div class="conteudo">
-          <h2>ônibus</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore reprehenderit repudiandae quod numquam esse
-            temporibus soluta voluptate sint.
-            consectetur.</p>
-          <a href="">Read More</a>
+    <div class="row containerCelular justify-content-evenly flex-fill">
+      <div class="cardC">
+        <div class="conteudoC">
+          <h2>Ônibus</h2>
+          <p>O aplicativo mostra as opções de rotas de ônibus acessíveis baseado na sua localização atual e o local de 
+            destino</p>
         </div>
-        <img src="imagens/celular.png">
+        <img src="imagens/celulares/celularAC-rotas.png" alt="Celular com o aplicativo aberto aparacendo várias rotas de 
+        ônibus">
       </div>
-      <div class="car">
-        <div class="conteudo">
+      <div class="cardC">
+        <div class="conteudoC">
           <h2>Avaliação</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore reprehenderit repudiandae quod numquam esse
-            temporibus soluta voluptate sint.
-            consectetur.</p>
-          <a href="">Read More</a>
+          <p>É possível conferir o quão acessível é algum local público e avaliá-lo com base na sua deficiência ou 
+            necessidade especial</p>
         </div>
-        <img src="imagens/celular.png">
+        <img src="imagens/celulares/celularAC-avaliacao.png" alt="Celular com o aplicativo aberto, aparecendo uma 
+        avaliação de um parque com vários comentários.">
       </div>
-      <div class="car">
-        <div class="conteudo">
+      <div class="cardC">
+        <div class="conteudoC">
           <h2>Documentos</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore reprehenderit repudiandae quod numquam esse
-            temporibus soluta voluptate sint.
-            consectetur.</p>
-          <a href="">Read More</a>
+          <p>Você pode armazenar aquivos úteis como laudos, certificados ou o passe livre para um acesso mais rápido e 
+            fácil.</p>
         </div>
-        <img src="imagens/celular.png">
+        <img src="imagens/celulares/celularAC-passeL.png" alt="Celular com o aplicativo aberto aparecendo uma imagem 
+        do passe livre.">
       </div>
     </div>
   </div>
   <!--Container Funcionalidades-->
-  
-  <h2 class="display-3 text-center pt-5 mgB-10">Nossa Equipe</h2>
+
+  <h2 class="display-3 text-center mgB-3 pt-4">Nossa Equipe</h2>
 
   <!--Container Equipe-->
-
-  <!--Fim Container Equipe-->
-
-  <!--Container da Equipe
-  <div class="container-fluid">
-    <div class="row">
-      <h1 class="display-1 text-center">Nossa Equipe</h1>
-    </div>
-      <div class="row">
-      <div class="box">
-        <!--1º Card - Lua
-        <div class="col-md-3">
-          <div class="card">
-              <div class="imgBx">
-                  <img src="imagens/equipe/yo.jfif">
-              </div>
-              <div class="content">
-                  <div class="details">
-                      <h2>Luanna Sachinelli Paggiaro<br><span>Project Manager</span></h2>
-                  </div>
-              </div>
+  <div class="container-fluid d-flex mgB-4">
+    <div class="row justify-content-evenly align-items-center flex-fill">
+      <div class="cardE pt-2">
+        <div class="circle">
+          <div class="imgE">
+            <img src="imagens/equipe/yo.jfif" alt="Imagem de perfil de Luanna">
           </div>
         </div>
-        <!--2º Card - Nat
-        <div class="col-md-3">
-          <div class="card">
-              <div class="imgBx">
-                  <img src="imagens/equipe/nat.png">
-              </div>
-              <div class="content">
-                  <div class="details">
-                      <h2>Natália Carvalho<br><span>Programadora e PCD</span></h2>
-                  </div>
-              </div>
+        <div class="descriptionE">
+          <a href="#"><i class="bi bi-instagram ic"></i></a>
+          <a href="#"><i class="bi bi-envelope ic"></i></a>
+          <h3>Luanna Sachinelli Paggiaro</h3>
+          <h4>Project Manager</h4>
+        </div>
+      </div>
+      <div class="cardE pt-2">
+        <div class="circle">
+          <div class="imgE">
+            <img src="imagens/equipe/nat.png" alt="Imagem de perfil de Natália">
           </div>
         </div>
-        <!--3º Card - Heitor
-        <div class="col-md-3">
-          <div class="card">
-              <div class="imgBx">
-                  <img src="imagens/equipe/heitor.jpg">
-              </div>
-              <div class="content">
-                  <div class="details">
-                      <h2>Heitor Gomes de Oliveira<br><span>Programador</span></h2>
-                  </div>
-              </div>
+        <div class="descriptionE">
+          <a href="#"><i class="bi bi-instagram ic"></i></a>
+          <a href="#"><i class="bi bi-envelope ic"></i></a>
+          <h3>Natália Carvalho</h3>
+          <h4>Programadora e <span style="text-transform: uppercase;">PCD</span></h4>
+        </div>
+      </div>
+      <div class="cardE pt-2">
+        <div class="circle">
+          <div class="imgE">
+            <img src="imagens/equipe/cat.png" alt="Imagem de perfil de Catarina">
           </div>
         </div>
-        <!--4º Card - Cat
-        <div class="col-md-3">
-          <div class="card">
-              <div class="imgBx">
-                  <img src="imagens/equipe/cat.png">
-              </div>
-              <div class="content">
-                  <div class="details">
-                      <h2>Catarina Fagotti Bonifácio<br><span>Programadora</span></h2>
-                  </div>
-              </div>
+        <div class="descriptionE">
+          <a href="#"><i class="bi bi-instagram ic"></i></a>
+          <a href="#"><i class="bi bi-envelope ic"></i></a>
+          <h3>Catarina Fagotti Bonifácio</h3>
+          <h4>Programadora</h4>
+        </div>
+      </div>
+      <div class="cardE pt-2">
+        <div class="circle">
+          <div class="imgE">
+            <img src="imagens/equipe/heitor.jpg" alt="Imagem de perfil de Heitor">
           </div>
         </div>
-        <!--fim cards
+        <div class="descriptionE">
+          <a href="#"><i class="bi bi-instagram ic"></i></a>
+          <a href="#"><i class="bi bi-envelope ic"></i></a>
+          <h3>Heitor Gomes de Oliveira</h3>
+          <h4>Programador</h4>
+        </div>
       </div>
     </div>
-  </div>-->
+  </div>
+  <!--Fim Container Equipe-->
 
   <!--Começo Novo Footer-->
   <footer>
     <div class="containerF">
-        <div class="sec aboutus">
-            <h2>Sobre nós</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum velit neque ut praesentium, earum nemo doloremque, itaque
-            sed numquam deserunt, totam iusto enim eum quis libero quibusdam quae quasi? Libero.</p>
-            <ul class="sci">
-                <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-                <li><a href="#"><i class="bi bi-twitter"></i></a></li>
-                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-                <li><a href="#"><i class="bi bi-youtube"></i></a></li>
-            </ul>
-        </div>
-        <div class="sec quicklinks">
-            <h2>Links Rápidos</h2>
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-        <div class="sec contact">
-            <h2>Contato</h2>
-            <ul class="info">
-                <li>
-                    <span><i class="bi bi-geo-alt-fill"></i></span>
-                    <span>647 Linda Rua<br>
-                    Cordeirópolis, CEP 130888-34,<br>BR</span>
-                </li>
-                <li>
-                    <span><i class="bi bi-telephone-fill"></i></span>
-                    <p><a href="tel: 123456789">(19) 99999-9999</a><br>
-                    <a href="tel: 123456789">(19) 99999-9999</a></p>
-                </li>
-                <li>
-                    <span><i class="bi bi-envelope-fill"></i></span>
-                    <p><a href="mailto: google@gmail.com">accesscity@gmail.com</a></p>
-                </li>
-            </ul>
-        </div>
+      <div class="sec aboutus">
+        <h2>Sobre nós</h2>
+        <p>AccessCity é um projeto de TCC de um aplicativo mobile que tem como objetivo tornar as cidades brasileiras mais acessíveis
+          para pessoas com deficiência e necessidades especiais. Ele foi desenvolvido pelo Colégio Técnico de Limeira da 
+          <span style="text-transform: uppercase;">UNICAMP</span>.</p>
+        <ul class="sci">
+          <li><a href="#"><i class="bi bi-envelope"></i></a></li>
+          <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+          <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+        </ul>
+      </div>
+      <div class="sec quicklinks">
+        <h2>Links Rápidos</h2>
+        <ul>
+          <li><a href="#">Download</a></li>
+          <li><a href="#">Log-In e Cadastro</a></li>
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </div>
+      <div class="sec contact">
+        <h2>Contato</h2>
+        <ul class="info">
+          <li>
+            <span><i class="bi bi-geo-alt-fill"></i></span>
+            <span>Rua Paschoal Marmo, 1888, Jardim<br>
+              Nova Itália, CEP 13484-332</span>
+          </li>
+          <!--<li>
+            <span><i class="bi bi-telephone-fill"></i></span>
+            <p><a href="tel: 123456789">(19) 99999-9999</a><br>
+              <a href="tel: 123456789">(19) 99999-9999</a>
+            </p>
+          </li>-->
+          <li>
+            <span><i class="bi bi-envelope-fill"></i></span>
+            <p><a href="mailto: google@gmail.com">accesscity@gmail.com</a></p>
+          </li>
+        </ul>
+      </div>
     </div>
-</footer>
-<div class="copyrightText">
+  </footer>
+  <div class="copyrightText">
     <p>Copyright © 2023 AccessCity. All Rights Reserved.</p>
-</div>
+  </div>
   <!--Fim Footer-->
 </body>
 

@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(45deg, #caf0f8, #90e0ef, #00b4d8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.containerContato{
+    position: relative;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px 0;
+}
+
+.containerContato .cardA{
+    position: relative;
+    height: 250px;
+    background: #90e0ef;
+    display: flex;
+    width: 45%;
+    margin: 30px 0;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.containerContato .cardA .imgContato{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgb(255,255,255);
+    height: calc(100% - 20px);
+    width: calc(100% - 20px);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.1);
+    transition: 0.5s ease-in-out;
+}
+
+.containerContato .cardA:hover .imgContato{
+    height: 150px;
+    width: 150px;
+    left: -75px;
+    top: calc(50% - 75px);
+}
+
+.containerContato .cardA .imgContato img{
+    max-width: 100px;
+    max-width: 100px;
+    transition: 0.5s ease-in-out;   
+}
+
+.containerContato .cardA:hover .imgContato img{
+    max-width: 75px;
+    max-height: 75px;
+}
+
+.containerContato .cardA .contContato{
+    position: absolute;
+    right: 0;
+    width: calc(100% - 75px);
+    height: 100%;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerContato .cardA .contContato h3{
+    color: #907ad6;
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+.containerContato .cardA .contContato a{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 20px;
+    border-radius: 5px;
+    background-color: #907ad6;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+@media(max-width: 992px){
+    .containerContato{
+        position: relative;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .containerContato .cardA{
+        width: 300px;
+        height: auto;
+        flex-direction: column;
+        margin: -20px 0;
+        box-shadow: none;
+        background-color: transparent;
+    }
+    .containerContato .cardA .imgContato{
+        position: relative;
+    }
+    .containerContato .cardA .imgContato,
+    .containerContato .cardA:hover .imgContato{
+        width: 80%;
+        height: 200px;
+        top: 100px;
+        left: 10%;
+    }
+    .containerContato .cardA:hover .imgContato{
+        top: 80px;
+    }
+    .containerContato .cardA .imgContato img,
+    .containerContato .cardA:hover .imgContato img{
+        max-width: 100px;
+    }
+    .containerContato .cardA .contContato{
+        position: relative;
+        width: 100%;
+        background: #fff;
+        box-shadow: none;
+        border-radius: 20px;
+        padding: 20px 40px 40px;
+        border-top: 100px solid #fff;
+    }
+}
